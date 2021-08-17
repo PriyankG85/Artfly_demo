@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic painting Nightfire-Artfly</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="images/logo_main.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Prompt&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<script>
+    function click1() {
+        let main1 = document.getElementById('main1');
+        let main2 = document.getElementById('main2');
+        // console.log('main1');
+        main2.style.display = 'none';
+        main1.style.display = 'block';
+    }
+
+    function click2() {
+        let main1 = document.getElementById('main1');
+        let main2 = document.getElementById('main2');
+        // console.log('main2');
+        main1.style.display = 'none';
+        main2.style.display = 'block';
+    }
+</script>
+
+<body>
+    <a class="back" href="javascript:history.back()">
+        < Back</a>
+            <img id="main1" src="images/read_more/canavas_sec/3/img1.jpeg" alt="">
+            <img id="main2" src="images/read_more/canavas_sec/3/img2.jpeg" alt="">
+            <div class="bottom">
+                <img class="_1" onclick="click1()" src="images/read_more/canavas_sec/3/img1.jpeg" alt="">
+                <img class="_2" onclick="click2()" src="images/read_more/canavas_sec/3/img2.jpeg" alt="">
+            </div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    body {
+        background-color: aliceblue;
+    }
+
+    .back {
+        width: min-content;
+        margin-left: 3vw;
+        color: #0255a3;
+        /* font-weight: bold; */
+        font-family: 'Sansita Swashed', sans-serif;
+        font-size: 28px;
+        text-decoration: none;
+        position: relative;
+        top: 3vh;
+    }
+
+    #main1,
+    #main2 {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        margin: 0;
+        width: 420px;
+    }
+
+    #main1 {
+        display: block;
+    }
+
+    #main2 {
+        display: none;
+    }
+
+    .bottom {
+        margin-top: 10vh;
+        margin-left: 41%;
+    }
+
+    .bottom img {
+        width: 90px;
+        margin: 0 1vw;
+        cursor: pointer;
+    }
+
+    /* Mobiles Screen */
+
+    @media screen and (max-width: 500px) {}
+
+    /* Tab Screens */
+
+    @media only screen and (max-width: 900px) and (min-width: 500px) {
+
+        #main1,
+        #main2 {
+            margin: 20% 0;
+            width: 560px;
+        }
+
+        .bottom {
+            margin-top: 26vh;
+            margin-left: 29vw;
+        }
+
+        .bottom img {
+            width: 150px;
+        }
+    }
+</style>
+
+</html>

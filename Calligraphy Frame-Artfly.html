@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calligraphy Frame-Artfly</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="images/logo_main.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Prompt&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<script>
+    function click1() {
+        let img1 = document.getElementById('img1');
+        let img2 = document.getElementById('img2');
+        let _1 = document.getElementById('_1');
+        let _2 = document.getElementById('_2');
+
+        img1.style.display = 'block';
+        img2.style.display = 'none';
+        _2.style.opacity = '0.6';
+        _1.style.opacity = '1';
+    }
+    function click2() {
+        let img1 = document.getElementById('img1');
+        let img2 = document.getElementById('img2');
+        let _1 = document.getElementById('_1');
+        let _2 = document.getElementById('_2');
+
+        img1.style.display = 'none';
+        img2.style.display = 'block';
+        _1.style.opacity = '0.6';
+        _2.style.opacity = '1';
+    }
+</script>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="images/logo_main.jpeg" alt="">
+        </a>
+        <h3>A R T F L Y</h3>
+        <p>Our gifts your choice</p>
+    </header>
+    <div class="main">
+        <a class="back" href="javascript:history.back()">
+            < Back</a>
+                <div class="preview">
+                    <span class="left">
+                        <a href="full-screen-5.html">
+                            <img id="img1" src="images/read_more/customize_sec/1/img1.jpeg" alt="">
+                            <img id="img2" src="images/read_more/customize_sec/1/img2.jpeg" alt="">
+                        </a>
+                    </span>
+                </div>
+                <div class="preview_right">
+                    <span class="right2">
+                        <img src="images/read_more/customize_sec/1/img1.jpeg" alt="" id="_1" onclick="click1()">
+                        <img src="images/read_more/customize_sec/1/img2.jpeg" alt="" id="_2" onclick="click2()">
+                    </span>
+                </div>
+                <div class="desc">
+                    <h1>Customize calligraphy Frames (of size 20 × 20 cm)</h1>
+                    <p class="rs">₹299/-</p>
+                    <br><br><br>
+                    <p>▪️This is a customize calligraphy Frame size 20×20cm withith Acrylic colors.<br>
+                        ▪️ Delivery within 6-8 working days.<br>
+                        ▪️ Shipping all over India.<br>
+                        ▪️ Each painting comes with a personalized hand written letter.<br>
+                        ▪️ Thankyou so much!</p>
+                </div>
+    </div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    body {
+        width: 100%;
+        background-color: aliceblue;
+        /* overflow: hidden; */
+    }
+
+    .logo {
+        margin-top: 20px;
+        margin-left: 44px;
+        width: 70px;
+    }
+
+    header h3 {
+        position: absolute;
+        top: 24px;
+        margin-left: 35%;
+        display: inline-flex;
+        font-family: 'Roboto Nono', sans-serif;
+        font-size: 40px;
+    }
+
+    header p {
+        position: absolute;
+        margin-left: 40.5%;
+        top: 70px;
+        font-family: 'Dancing Script', cursive;
+        color: #000;
+        font-size: 40px;
+    }
+
+    .main {
+        margin: 6vh 0 22vh 0.5vw;
+    }
+
+    .back {
+        width: 55px;
+        margin-left: 3vw;
+        color: #0255a3;
+        /* font-weight: bold; */
+        font-family: 'Sansita Swashed', sans-serif;
+        font-size: 28px;
+        text-decoration: none;
+        position: relative;
+        top: 2vh;
+    }
+
+    .right2 img {
+        width: 90px;
+        position: relative;
+        top: 8vh;
+        left: 9.3vw;
+        cursor: pointer;
+    }
+
+    #_2 {
+        margin-left: 1vw;
+        opacity: 0.6;
+    }
+
+
+    .preview {
+        display: flex;
+        /* flex-direction: column; */
+        margin-top: 10vh;
+        margin-left: 80px;
+    }
+
+    .preview .left img {
+        margin-left: 0;
+    }
+
+    #img1 {
+        width: 300px;
+        display: block;
+    }
+
+    #img2 {
+        width: 300px;
+        /* margin-top: 5vh; */
+        display: none;
+    }
+
+    .desc {
+        position: absolute;
+        top: 38vh;
+        margin-left: 32vw;
+    }
+
+    .desc h1 {
+        font-size: 34px;
+    }
+
+    .desc p {
+        font-size: 20px;
+    }
+
+    .desc .rs {
+        padding-top: 20px;
+        font-size: 35px;
+        color: #487701;
+    }
+
+    /* Mobiles Screen */
+    @media screen and (max-width: 500px) {}
+
+    /* Tab Screens */
+
+    @media only screen and (max-width: 900px) and (min-width: 500px) {
+
+        .logo {
+            margin-top: 30px;
+            margin-left: 30px;
+            width: 90px;
+        }
+
+        header h3 {
+            position: absolute;
+            /* margin-top: 0; */
+            margin-left: 20%;
+            display: inline-flex;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 60px;
+        }
+
+        header p {
+            position: absolute;
+            margin-left: 34.2%;
+            top: 90px;
+            font-family: 'Dancing Script', 'Sansita Swashed', cursive;
+            color: #000;
+            font-size: 50px;
+        }
+
+        .main {
+            margin-top: 4%;
+            margin-left: 3vw;
+        }
+
+        .preview {
+            width: 100%;
+            display: flex;
+            /* flex-direction: row; */
+            margin-top: 2vh;
+            margin-left: 3vw;
+        }
+
+        .right2 img {
+            position: absolute;
+            width: 120px;
+            left: 68vw;
+        }
+
+        #_1 {
+            margin-top: 21vh;
+            margin-left: 0;
+            /* top: 11vh; */
+            cursor: pointer;
+        }
+
+        #_2 {
+            margin-top: 32vh;
+            margin-left: 0;
+            /* top: 12vh; */
+            cursor: pointer;
+            opacity: 0.6;
+        }
+
+
+        .preview .left img {
+            margin-left: 2%;
+            margin-top: 5vh;
+        }
+
+        .preview .left a {
+            width: min-content;
+        }
+
+        #img1 {
+            width: 400px;
+            display: block;
+        }
+
+        #img2 {
+            width: 420px;
+            display: none;
+        }
+
+        .desc {
+            margin: 0;
+            position: relative;
+            top: 6vh;
+            left: 0;
+        }
+
+        .desc h1 {
+            font-size: 42px;
+        }
+
+        .desc p {
+            font-size: 34px;
+        }
+
+        .desc .rs {
+            font-size: 42px;
+            color: #487701;
+        }
+    }
+</style>
+
+</html>

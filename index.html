@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artfly-Our gifts your choice</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="images/logo_main.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Prompt&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/02e5ebc5a7.js" crossorigin="anonymous"></script>
+</head>
+<script>
+    function menu() {
+        let menu = document.getElementById('menu');
+        let menubar = document.getElementById('menubar');
+        let body = document.getElementById('body');
+
+        if (menubar.style.right > '-60vw') {
+            menubar.style.right = '-60vw';
+            body.style.opacity = 1;
+        }
+        else {
+            menubar.style.right = '0';
+            body.style.opacity = 0.8;
+        }
+    }
+    function display() {
+        let menubar = document.getElementById('menubar');
+        let body = document.getElementById('body');
+        // menubar.style.right = '-50%';
+        // if (menubar.style.right < '-49%') {
+        menubar.style.right = '-60vw';
+        body.style.opacity = 1;
+        // }
+    }
+    function display2() {
+        let menubar = document.getElementById('menubar');
+        let body = document.getElementById('body');
+
+        if (menubar.style.right > '-60vw') {
+            menubar.style.right = '-60vw';
+            body.style.opacity = 1;
+        }
+    }
+    function back(id) {
+        let sec = document.getElementById(id);
+        let back = document.getElementById('back');
+        let next = document.getElementById('next');
+        // console.log(sec);
+
+        if (sec.style.marginLeft == '2.5vw') {
+            sec.style.marginLeft = '-65vw';
+            back.style.display = 'block';
+            next.style.display = 'none';
+        }
+        else {
+            sec.style.marginLeft = '2.5vw';
+            back.style.display = 'none';
+            next.style.display = 'block';
+        }
+    }
+    function next(id) {
+        let sec = document.getElementById(id);
+        let back = document.getElementById('back');
+        let next = document.getElementById('next');
+        // console.log(sec);
+
+        if (sec.style.marginLeft == '-62.5vw') {
+            sec.style.marginLeft = '2.5vw';
+            back.style.display = 'none';
+            next.style.display = 'block';
+        }
+        else {
+            sec.style.marginLeft = '-62.5vw';
+            back.style.display = 'block';
+            next.style.display = 'none';
+        }
+    }
+</script>
+
+<body id="body">
+    <img src="images/menu.png" alt="" id="menu" onclick="menu()">
+    <div id="menubar">
+        <img src="images/close.png" alt="" id="close" onclick="menu()">
+        <ul>
+            <a href="#home" onclick="display()">
+                <li>Home</li>
+            </a>
+            <a href="products.html" onclick="display()">
+                <li>All Products</li>
+            </a>
+            <a href="#footer" onclick="display()">
+                <li>Contact us</li>
+            </a>
+            <a href="#" onclick="display()">
+                <li>About us</li>
+            </a>
+        </ul>
+    </div>
+    <section id="home" onclick="display2()">
+        <header>
+            <a href="index.html">
+                <img class="logo" src="images/logo/ms-icon-144x144.png" alt="">
+            </a>
+            <h3>A R T F L Y</h3>
+            <pre>
+                    Our  gifts  your  choice
+                </pre>
+            <pre class="pre">
+                    Our  gifts  your  choice
+                </pre>
+        </header>
+        <div class="main">
+            <img class="img1" src="images/img1.jpeg" alt="">
+            <p class="p">
+                PUTTING A SMILE TO A
+                <br>
+                PERSON'S FACE
+            </p>
+            <img class="img2" src="images/img2.jpeg" alt="">
+            <p class="p2">• CRAFTING YOUR CURIOSITY</p>
+        </div>
+    </section>
+    <section id="products" onclick="display2()">
+        <div class="canvas">
+            <h2 class="_1">Canvas Paintings</h2>
+            <div class="con1">
+                <!-- <img class="back" id="back" src="images/read_more/next.png" alt="" onclick="next('sec1')"> -->
+                <!-- <img class="back" id="next" src="images/read_more/back.png" alt="" onclick="back('sec1')"> -->
+                <div class="sec1" id="sec1">
+
+                    <a id="main1" class="large" href="Multicolored lord Ganesha.html">
+                        <img src="images/read_more/canavas_sec/1/img1.jpeg" alt="">
+                        <div class="desc">
+                            <p>Multicolored lord Ganesha</p>
+                            <small>₹299/-</small>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="con2">
+                <img class="back" id="back" src="images/read_more/back.png" alt="" onclick="back('sec2')">
+                <img class="next" id="next" src="images/read_more/next.png" alt="" onclick="next('sec2')">
+                <div class="sec2" id="sec2">
+
+                    <a id="main2" class="small" href="Cosmic painting midnight hearth.html">
+                        <img src="images/read_more/canavas_sec/2/img1.jpeg" alt="">
+                        <div class="desc">
+                            <p>Cosmic painting midnight hearth</p>
+                            <small>₹149/-</small>
+                        </div>
+                    </a>
+                    <a id="main2" class="small" href="Cosmic painting Nightfire.html">
+                        <img src="images/read_more/canavas_sec/3/img1.jpeg" alt="">
+                        <div class="desc">
+                            <p>Cosmic painting Nightfire</p>
+                            <small>₹149/-</small>
+                        </div>
+                    </a>
+                    <a id="main2" class="small" href="Cosmic painting Nightsky.html">
+                        <img src="images/read_more/canavas_sec/4/img1.jpeg" alt="">
+                        <div class="desc">
+                            <p>Cosmic painting Nightsky</p>
+                            <small>₹149/-</small>
+                        </div>
+                    </a>
+                    <a id="main2" class="small" href="Combo of 3 Cosmic paintings.html">
+                        <img src="images/read_more/canavas_sec/5/img5.jpeg" alt="">
+                        <div class="desc">
+                            <p>Combo of 3 Cosmic paintings</p>
+                            <small>₹399/-</small>
+                        </div>
+                    </a>
+                    <a id="main2" href="Rajasthani man & woman painting.html">
+                        <img src="images/read_more//canavas_sec/6/img1.jpeg" alt="">
+                        <div class="desc">
+                            <p>Rajasthani man & woman painting</p>
+                            <small>₹499/-</small>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="pencile">
+            <h2 class="_2">Pencile Sketches</h2>
+            <div class="con3">
+                <!-- <img class="back" id="back" src="images/read_more/back.png" alt="" onclick="back('sec3')"> -->
+                <!-- <img class="next" id="next" src="images/read_more/next.png" alt="" onclick="next('sec3')"> -->
+                <div class="sec1" id="sec3">
+
+
+                </div>
+            </div>
+            <div class="con4">
+                <!-- <img class="back" id="back" src="images/read_more/back.png" alt="" onclick="back('sec4')"> -->
+                <!-- <img class="next" id="next" src="images/read_more/next.png" alt="" onclick="next('sec4')"> -->
+                <div class="sec2" id="sec4">
+
+
+                </div>
+            </div>
+        </div>
+        <div class="customize">
+            <h2 class="_2">Customize gifts</h2>
+            <div class="con5">
+                <!-- <img class="back" id="back" src="images/read_more/back.png" alt="" onclick="back('sec5')"> -->
+                <!-- <img class="next" id="next" src="images/read_more/next.png" alt="" onclick="next('sec5')"> -->
+                <div class="sec1" id="sec5">
+
+                    <a id="main5" href="Calligraphy Frame-Artfly.html">
+                        <img src="images/read_more/customize_sec/1/img1.jpeg" alt="">
+                        <div class="desc">
+                            <p>Calligraphy Frame</p>
+                            <small>₹299/-</small>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="con6">
+                <!-- <img class="back" id="back" src="images/read_more/back.png" alt="" onclick="back('sec6')"> -->
+                <!-- <img class="next" id="next" src="images/read_more/next.png" alt="" onclick="next('sec6')"> -->
+                <div class="sec2" id="sec6"></div>
+
+
+
+            </div>
+        </div>
+        <a href="products.html">
+            <button class="more">
+                <div class="hide"></div>
+                <pre>All Products ></pre>
+            </button>
+        </a>
+    </section>
+    <section id="footer" onclick="display2()">
+        <p>Shipping all over India</p>
+
+        <h1>Contact Us</h1>
+        <a href="https://www.instagram.com/myartgallary._._/"><i class="fab fa-instagram"></i></a>
+
+    </section>
+</body>
+
+</html>
